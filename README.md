@@ -1,5 +1,20 @@
 # jsp-servlets-and-mvc
 
+## Contenido de la carpeta "jspbasics"
+- **helloworld.jsp**
+Es un jsp que printea la hora del servidor con una expresión jsp: <%= new java.util.Date() %>
+
+- **expresion-jsp.jsp**
+Es un jsp para aprender expresiones jsp que son las que van entre **"<%=  %>"** e incorporan una línea sencilla de código java. 
+
+- **scriptlet-jsp.jsp**
+Es un jsp para aprender scriptlets jsp que son los que van entre **"<%  %>"** e incorporan de una a varias líneas de código java. Para incluír el contenido en la página se usa el método out.println(). En este caso podemos ver un scriptlet jsp con un bucle for
+
+- **declaration-jsp.jsp**
+Es un jsp para aprender declaraciones jsp que son las que van entre **"<%!  %>"** e incorporan un método java, al que luego se llama en el propio jsp (con una expresión jsp o con un scriptlet jsp). En este caso podemos ver una declaración jsp que crea el método makeItLower(), que luego es invocado por una expresión jsp
+
+---
+
 ## Contenido de la carpeta "servlets"
 - **HelloWorldServlet.java**
 Es un servlet de inicio donde se pinta por pantalla la fecha y hora actuales
