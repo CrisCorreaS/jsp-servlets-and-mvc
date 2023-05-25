@@ -1,6 +1,44 @@
-# jsp-servlets-and-mvc
+# Repositorio de Recopilación de Archivos JSP, Servlets y MVC
 
-## Contenido de la carpeta "jspbasics"
+¡Bienvenido al repositorio de Recopilación de Archivos JSP, Servlets y el Modelo Vista Controlador (MVC)!
+
+Este repositorio ha sido creado con el propósito de compartir el conocimiento adquirido durante mi curso de Udemy sobre archivos JSP, servlets y el patrón MVC. Aquí encontrarás una recopilación estructurada de ejercicios resueltos y apuntes detallados que te ayudarán a comprender y aplicar estos conceptos en tus proyectos de desarrollo web.
+
+### ¿Por qué este repositorio puede ayudarte?
+- **Recopilación estructurada:** El repositorio está organizado en carpetas separadas para cada concepto clave, lo que te permitirá encontrar fácilmente la información que necesitas y seguir una progresión lógica en tu aprendizaje.
+
+- **Ejercicios resueltos:** Encontrarás una variedad de ejercicios prácticos que he resuelto durante el curso. Estos ejemplos concretos te brindarán una comprensión más sólida de cómo se aplican los archivos JSP, servlets y el patrón MVC en situaciones reales.
+
+- **Apuntes y explicaciones claras:** Además de los ejercicios resueltos, he compartido apuntes detallados y explicaciones claras sobre cada tema. Estos recursos te ayudarán a comprender los fundamentos de los archivos JSP, servlets y el patrón MVC, así como los conceptos avanzados que puedan surgir en el desarrollo web.
+
+- **Comunidad y colaboración:** Este repositorio no es solo un lugar para compartir conocimientos, sino también un espacio para que interactúes con otros desarrolladores. Puedes plantear preguntas, intercambiar ideas y contribuir con tus propios ejemplos y mejoras. ¡Juntos podemos crear un ambiente de aprendizaje colaborativo!
+
+### Cómo utilizar este repositorio
+- Explora las carpetas correspondientes a los archivos JSP, servlets y el patrón MVC para acceder a los ejercicios resueltos.
+- Lee los apuntes y explicaciones proporcionados para obtener una comprensión sólida de los conceptos fundamentales y avanzados.
+- Si tienes alguna pregunta o sugerencia, no dudes en abrir un problema o enviar una solicitud de extracción. Tu participación es bienvenida.
+
+### Contribuir
+¡Tú también puedes contribuir a este repositorio! Si tienes ejemplos adicionales, mejoras en la documentación o cualquier otro aporte que pueda beneficiar a otros usuarios, ¡no dudes en enviar una solicitud de extracción!
+
+Espero que este repositorio te sea útil en tu camino de aprendizaje y desarrollo web. ¡Disfruta explorando y aplicando tus conocimientos sobre archivos JSP, servlets y el patrón MVC!
+
+Gracias por visitar este repositorio.
+
+Nota: Este repositorio fue creado por Cristina Correa como parte del curso "JSP, Servlets and JDBC for Beginners: Build a Database App" en Udemy. Los materiales aquí compartidos son el resultado de mi aprendizaje personal y mi intención es divulgarlos para el beneficio de la comunidad de desarrolladores.
+
+---
+## Ejercicios Resueltos
+Existen tres carpetas con ejercicios resueltos: 
+- **jspbasics:** Aquí tienes todo lo necesario para iniciarte con los jsp, desde un Hello World hasta etiquetas jsp
+- **jsptags:** Aquí se encuentran los ejercicios de tags en jsp más complicadas como las jstl
+- **servlets:** Aquí están todos ejercicios resueltos de servlets y un ejemplo básico de mvc
+
+
+
+Si nunca has trabajado con un dynamic web project y no entiendes el orden de carpetas, solo tienes que recordar que en **src** se encuentran los Servlets y en **WebContent** se encuentran los jsp.
+<br/><br/>
+### Contenido de la carpeta "jspbasics"
 
 - **helloworld.jsp**
 Es un jsp que printea la hora del servidor con una expresión jsp: <%= new java.util.Date() %>
@@ -14,10 +52,8 @@ Es un jsp para aprender scriptlets jsp que son los que van entre **"<%  ...  %>"
 
 - - **declaration-jsp.jsp**
 Es un jsp para aprender declaraciones jsp que son las que van entre **"<%! ...  %>"** e incorporan un método java, al que luego se llama en el propio jsp (con una expresión jsp o con un scriptlet jsp). En este caso podemos ver una declaración jsp que crea el método makeItLower(), que luego es invocado por una expresión jsp
-
----
-
-## Contenido de la carpeta "servlets"
+<br/><br/>
+### Contenido de la carpeta "servlets"
 - **HelloWorldServlet.java**
 Es un servlet de inicio donde se pinta por pantalla la fecha y hora actuales
 
