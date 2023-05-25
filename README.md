@@ -4,7 +4,7 @@
 - **HelloWorldServlet.java**
 Es un servlet de inicio donde se pinta por pantalla la fecha y hora actuales
 
--**StudentsServlet**
+- **StudentsServlet**
 Es un servlet que es invocado por un JSP (**student-form.jsp**) a través del atributo "action" de su etiqueta formulario. El JSP crea un formulario que cuando se cubre y envía, los datos cubiertos llegan al servlet y se imprimen por pantalla con el método request.getParameter(). JSP invoca a un Servlet con el atributo "action" de su etiqueta form
 
 - **DatosArrayServlet.java**
