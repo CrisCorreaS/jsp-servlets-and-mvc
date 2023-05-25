@@ -5,7 +5,6 @@
     <h2>Student Table Demo</h2>
     <hr />
     <br />
-
     <table border="1">
       <tr>
         <th>First Name</th>
@@ -20,6 +19,7 @@
           <td>${tempStudent.email}</td>
         </tr>
       </c:forEach>
+
     </table>
   </body>
 </html>
