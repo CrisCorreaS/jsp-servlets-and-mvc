@@ -23,8 +23,8 @@ Es una clase de java llamada StudentsDataUtil que sirve como **modelo** en el mv
 - **MvcServlet.java**
 Es un servlet que sirve como **controlador** en el mvc. Primero coge una lista de los estudiantes, la pasa al request object con el método request.setAttribute() con el nombre "student-list", obtiene el request dispacher con el método request.getRequestDispatcher() apuntando hacia el jsp (view_students_two.jsp) y manda la información al jsp con el método dispatcher.forward().
 
--- **view_students_two.jsp**
+- - **view_students_two.jsp**
 Es un jsp que sirve como **vista** que imprime por pantalla en una tabla, los datos de los estudiantes que le envía el servlet (MvcServlet.java)
 
--- **index.html**
+- - **index.html**
 Es un html que tiene un enlace que conecta con el Servlet para así, poder evitar ejecutar el Servlet directamente. Es una página simple con una etiqueta de enlace que nos redirige a la página web de nuestro Servlet
