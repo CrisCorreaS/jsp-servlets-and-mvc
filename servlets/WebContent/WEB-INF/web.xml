@@ -3,11 +3,11 @@
   <display-name>servletdemo</display-name>
   <context-param>
     <param-name>max-shopping-cart-size</param-name>
-    <param-value>99</param-value>
+    <param-value>999</param-value>
   </context-param>
   <context-param>
     <param-name>project-team-name</param-name>
-    <param-value>The Coding Gurus</param-value>
+    <param-value>Los Gurús del Código</param-value>
   </context-param>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
