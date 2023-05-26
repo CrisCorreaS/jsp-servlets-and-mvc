@@ -36,7 +36,7 @@ Existen tres carpetas con ejercicios resueltos:
 
 
 
-Si nunca has trabajado con un dynamic web project y no entiendes el orden de carpetas, solo tienes que recordar que en **src** se encuentran los Servlets y en **WebContent** se encuentran los jsp.
+Si nunca has trabajado con un dynamic web project y no entiendes el orden de carpetas, solo tienes que recordar que en por un lado, en la carpeta **src** se encuentran los Servlets y las clases java, y por otro lado, en **WebContent** se encuentran los jsp.
 <br/><br/>
 ### Contenido de la carpeta "jspbasics"
 
@@ -52,6 +52,25 @@ Es un jsp para aprender scriptlets jsp que son los que van entre **"<%  ...  %>"
 
 - - **declaration-jsp.jsp**
 Es un jsp para aprender declaraciones jsp que son las que van entre **"<%! ...  %>"** e incorporan un método java, al que luego se llama en el propio jsp (con una expresión jsp o con un scriptlet jsp). En este caso podemos ver una declaración jsp que crea el método makeItLower(), que luego es invocado por una expresión jsp
+
+**Básicos de JSP:**
+- **calling-clase-java.jsp**
+Es un jsp que llama a una clase java (ClaseJava.java) para utilizar el método "com.git.jspbasics.ClaseJava.makeItLower()" con una expresión jsp. Los métodos de una clase se invocan poniendo el paquete donde va la clase (com.git.jspbasics) + el nombre de la clase (ClaseJava) + el nombre del método (makeItLower())
+
+- **request-object.jsp**
+Es un jsp que utiliza el objeto jsp request. Los objetos básicos de jsp que suelen utilizarse son: 
+- - **request:** objeto utilizado en JSP para representar la solicitud del cliente. Proporciona acceso a los parámetros enviados por el cliente, como datos de formularios o valores de URL, y permite almacenar y recuperar atributos relacionados con la solicitud actual.
+- - **response:** objeto utilizado en JSP para representar la respuesta que se enviará al cliente. Proporciona métodos para escribir contenido en la respuesta, establecer encabezados HTTP, redirigir a otras páginas y más.
+- - **out:** objeto de salida predeterminado en JSP que representa la salida del contenido generado. Puede usarse para escribir contenido en la respuesta del cliente utilizando el método out.print() o out.println().
+- - **session:** objeto utilizado en JSP para representar la sesión del usuario. Proporciona un espacio de almacenamiento persistente en el servidor para mantener información específica del usuario a lo largo de varias solicitudes. Se utiliza para almacenar y recuperar atributos relacionados con la sesión actual.
+- - **application:** objeto utilizado en JSP para representar el contexto de la aplicación web. Proporciona un espacio de almacenamiento compartido entre todas las solicitudes y sesiones de la aplicación. Se utiliza para almacenar y recuperar atributos globales que deben estar disponibles en toda la aplicación.
+
+- **homepage.jsp**
+Es un jsp que incluye otros archivos con la fórmula **<jsp:include page="..."/>**. En este caso incluye un html (my-header.html) y un jsp (my-footer.jsp)
+
+- **student-form-response.jsp**
+Es un jsp que obtiene los datos intoducidos en un form html (student-form.html). Si el form pone <input type="text" **name="firstName"** />, el jsp para obtener ese parámetro tiene que utilizar la fórmula **${param.firstName}**
+
 <br/><br/>
 ### Contenido de la carpeta "servlets"
 - **HelloWorldServlet.java**
