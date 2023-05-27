@@ -52,20 +52,3 @@ Es un jsp que obtiene los datos que se envían en su propio formulario y los pin
 
       *3-* Hacemos otro if para verificar si la variable "theItem" no es nula. La variable "theItem" se obtiene a través de la solicitud (request) utilizando el método getParameter() como en el primer paso. Si la variable "theItem" no es nula, significa que se ha enviado un parámetro en el form. En ese caso, el código agrega el valor de "theItem" a la lista "items" utilizando el método add() (items.add("theItem")).
 - - **Paso 3:**  Creamos una lista desordenada que dentro tiene un un scriptlet jsp que va printeando, con el método println() del objeto out (out.println()), los datos guardados en el Array con un bucle forEach
-
-**Cookies:**
-
-Las cookies son pequeños archivos de texto que se envían y almacenan en el navegador del cliente.
-- **cookies-personalize-form.html:**
-Es un html que tiene un form con un dropdown (<select name="favoriteLanguage">) que es el que guarda los datos en el jsp cookies-personalize-response.jsp (<form action="cookies-personalize-response.jsp">)
-
-<ul>
-<li> <b>cookies-personalize-response.jsp:</b>
-Es un jsp que obtiene la información del form html con el método getParameter() del objeto jsp request, luego crea una cookie (theCookie), le da el tiempo de vida (en segundos) a la cookie con el método setMaxAge() y envía la cookie al navegador con la sentencia: response.addCookie(theCookie). Por último, tiene un enlace a la homepage (cookies-homepage.jsp)</li>
- 
-<li> <b>cookies-homepage.jsp:</b>
-Es un jsp que: 
-  <ul><li> Establece una variable favLang con un valor predeterminado de "Java". Obtiene las cookies de la solicitud del navegador utilizando request.getCookies(), luego, verifica si se han obtenido cookies en la variable theCookies. Si se han obtenido cookies, el código realiza un bucle for para iterar a través de todas las cookies obtenidas. En cada iteración, se verifica si el nombre de la cookie coincide con "myApp.favoriteLanguage" utilizando tempCookie.getName(). Esto se hace para encontrar la cookie específica que almacena el lenguaje favorito. Si se encuentra la cookie, se asigna el valor de esa cookie a la variable favLang utilizando tempCookie.getValue(). Luego, se sale del bucle utilizando break. </li>
-  <li>Printea diferente información según el lenguaje favorito de cada persona </li>
-  <li>Tiene un link al form html para establecer el lenguaje por defecto que quiere que se almacene en la cookie, así que puede personalizar la página
-  </li></ul>
