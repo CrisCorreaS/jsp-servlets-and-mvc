@@ -5,18 +5,20 @@
 Este repositorio ha sido creado con el propósito de compartir el conocimiento adquirido durante mi curso de Udemy sobre archivos JSP, servlets y el patrón MVC. Aquí encontrarás una recopilación estructurada de ejercicios resueltos y apuntes detallados que te ayudarán a comprender y aplicar estos conceptos en tus proyectos de desarrollo web.
 
 ### ¿Por qué este repositorio puede ayudarte?
-- **Recopilación estructurada:** El repositorio está organizado en carpetas separadas para cada concepto clave, lo que te permitirá encontrar fácilmente la información que necesitas y seguir una progresión lógica en tu aprendizaje.
+<ul>
+<li> <b>Recopilación estructurada:</b> El repositorio está organizado en carpetas separadas para cada concepto clave, lo que te permitirá encontrar fácilmente la información que necesitas y seguir una progresión lógica en tu aprendizaje.</li>
 
-- **Ejercicios resueltos:** Encontrarás una variedad de ejercicios prácticos que he resuelto durante el curso. Estos ejemplos concretos te brindarán una comprensión más sólida de cómo se aplican los archivos JSP, servlets y el patrón MVC en situaciones reales.
+<li> <b>Ejercicios resueltos:</b> Encontrarás una variedad de ejercicios prácticos que he resuelto durante el curso. Estos ejemplos concretos te brindarán una comprensión más sólida de cómo se aplican los archivos JSP, servlets y el patrón MVC en situaciones reales.</li>
 
-- **Apuntes y explicaciones claras:** Además de los ejercicios resueltos, he compartido apuntes detallados y explicaciones claras sobre cada tema. Estos recursos te ayudarán a comprender los fundamentos de los archivos JSP, servlets y el patrón MVC, así como los conceptos avanzados que puedan surgir en el desarrollo web.
+<li> <b>Apuntes y explicaciones claras:</b> Además de los ejercicios resueltos, he compartido apuntes detallados y explicaciones claras sobre cada tema. Estos recursos te ayudarán a comprender los fundamentos de los archivos JSP, servlets y el patrón MVC, así como los conceptos avanzados que puedan surgir en el desarrollo web.</li>
 
-- **Comunidad y colaboración:** Este repositorio no es solo un lugar para compartir conocimientos, sino también un espacio para que interactúes con otros desarrolladores. Puedes plantear preguntas, intercambiar ideas y contribuir con tus propios ejemplos y mejoras. ¡Juntos podemos crear un ambiente de aprendizaje colaborativo!
+<li> <b>Comunidad y colaboración:</b> Este repositorio no es solo un lugar para compartir conocimientos, sino también un espacio para que interactúes con otros desarrolladores. Puedes plantear preguntas, intercambiar ideas y contribuir con tus propios ejemplos y mejoras. ¡Juntos podemos crear un ambiente de aprendizaje colaborativo!</li> </ul>
 
 ### Cómo utilizar este repositorio
-- Explora las carpetas correspondientes a los archivos JSP, servlets y el patrón MVC para acceder a los ejercicios resueltos.
-- Lee los apuntes y explicaciones proporcionados para obtener una comprensión sólida de los conceptos fundamentales y avanzados.
-- Si tienes alguna pregunta o sugerencia, no dudes en abrir un problema o enviar una solicitud de extracción. Tu participación es bienvenida.
+<ul>
+<li>Explora las carpetas correspondientes a los archivos JSP, servlets y el patrón MVC para acceder a los ejercicios resueltos.</li>
+<li>Lee los apuntes y explicaciones proporcionados para obtener una comprensión sólida de los conceptos fundamentales y avanzados.</li>
+<li>Si tienes alguna pregunta o sugerencia, no dudes en abrir un problema o enviar una solicitud de extracción. Tu participación es bienvenida.</li> </ul>
 
 ### Contribuir
 ¡Tú también puedes contribuir a este repositorio! Si tienes ejemplos adicionales, mejoras en la documentación o cualquier otro aporte que pueda beneficiar a otros usuarios, ¡no dudes en enviar una solicitud de extracción!
@@ -30,9 +32,10 @@ Nota: Este repositorio fue creado por Cristina Correa como parte del curso "JSP,
 ---
 ## Ejercicios Resueltos
 Existen tres carpetas con ejercicios resueltos: 
-- **jspbasics:** Aquí tienes todo lo necesario para iniciarte con los jsp, desde un Hello World hasta etiquetas jsp
-- **jsptags:** Aquí se encuentran los ejercicios de tags en jsp más complicadas como las jstl
-- **servlets:** Aquí están todos ejercicios resueltos de servlets y un ejemplo básico de mvc
+<ul>
+<li> <b>jspbasics:</b> Aquí tienes todo lo necesario para iniciarte con los jsp, desde un Hello World hasta etiquetas jsp</li>
+<li> <b>jsptags:</b> Aquí se encuentran los ejercicios de tags en jsp más complicadas como las jstl</li>
+<li> <b>servlets:</b> Aquí están todos ejercicios resueltos de servlets y un ejemplo básico de mvc</li> </ul>
 
 
 
@@ -40,8 +43,9 @@ Si nunca has trabajado con un dynamic web project y no entiendes el orden de car
 <br/><br/>
 ### Contenido de la carpeta "jspbasics"
 
-- **helloworld.jsp:**
-Es un jsp que printea la hora del servidor con una expresión jsp: <%= new java.util.Date() %>
+<ul>
+<li> <b>helloworld.jsp:</b></li> </ul>
+Es un jsp que printea la hora del servidor con una expresión jsp: <%= new java.util.Date() %></li> </ul>
 
 **Diferencias entre expresión jsp, scriptlet jsp y declaración jsp:**
 - - **expresion-jsp.jsp:**
@@ -71,32 +75,75 @@ Es un jsp que incluye otros archivos con la fórmula **<jsp:include page="..."/>
 - **student-form-response.jsp:**
 Es un jsp que obtiene los datos intoducidos en un form html (student-form.html). Si el form pone <input type="text" **name="firstName"** />, el jsp para obtener ese parámetro tiene que utilizar la fórmula **${param.firstName}**
 
+- **student-dropdown-form-response.jsp:**
+Es un jsp que obtiene los datos intoducidos en un form html (student-dropdown-form.html) con un elemento dropdown (un select con varias opciones). El select comparte el mismo name (<select **name="country"**>) por lo que para obtener ese parámetro se puede utilizar la misma fórmula que en el otro form: **${param.country}**
+
+- **student-radiobutton-response.jsp:**
+Es un jsp que obtiene los datos intoducidos en un form html (student-radiobutton-form.html) con un elemento radio button (un input type="radio"). Las etiquetas input comparten el mismo name (<input type="radio" **name="favoriteLanguage"** value="Java" />) por lo que para obtener ese parámetro se puede utilizar la misma fórmula que en el otro form: **${param.favoriteLanguage}**
+
+- **student-checkbox-response.jsp:**
+Es un jsp que obtiene los datos intoducidos en un form html (student-checkbox-form.html) con un elemento checkbox (un input type="checkbox"). Las etiquetas input comparten el mismo name (<input type="checkbox" **name="favoriteLanguage"** value="Java" />). Esta vez en el jsp se utiliza un scriptlet jsp que mete con el método request.getParameterValues("favoriteLanguage") los valores en un array de Strings, luego se recorre el array con un bucle forEach y se printean los valores invocando al método println() del objeto jsp out (out.println())
+
+- **to-do-list.jsp:**
+Es un jsp que obtiene los datos que se envían en su propio formulario y los pinta para hacer una to-do list. Con este código tenemos varios pasos que dar:
+- - **Paso 1:** Crear un form que se apunte a si mismo una vez lo hayamos cubierto y mandado (se hace con el atributo **action="to-do-list.jsp"**  del form)
+- - **Paso 2:** Con un scriptlet jsp, añadimos los elementos enviados por el form a nuestra to-do list. 
+
+      **1-** Creamos un array de Strings que meta los valores que nos devuelva el método getAttribute() del objeto jsp session (session.getAttribute()). 
+
+      **2-** Hacemos un if para comprobar si existe la session, si la lista de tareas es nula, significa que es la primera vez que se accede a la página o que la lista no ha sido creada anteriormente; en ese caso, se crea una nueva lista vacía utilizando new ArrayList<String>(). Se almacena esta nueva lista en la sesión del usuario utilizando session.setAttribute("myToDoList", items). Esto asegura que la lista esté disponible para su uso en futuras solicitudes del usuario.
+
+      **3-** Hacemos otro if para verificar si la variable "theItem" no es nula. La variable "theItem" se obtiene a través de la solicitud (request) utilizando el método getParameter() como en el primer paso. Si la variable "theItem" no es nula, significa que se ha enviado un parámetro en el form. En ese caso, el código agrega el valor de "theItem" a la lista "items" utilizando el método add() (items.add("theItem")).
+- - **Paso 3:**  Creamos una lista desordenada que dentro tiene un un scriptlet jsp que va printeando, con el método println() del objeto out (out.println()), los datos guardados en el Array con un bucle forEach
+
+**Cookies:**
+
+Las cookies son pequeños archivos de texto que se envían y almacenan en el navegador del cliente.
+- **cookies-personalize-form.html:**
+Es un html que tiene un form con un dropdown (<select name="favoriteLanguage">) que es el que guarda los datos en el jsp cookies-personalize-response.jsp (<form action="cookies-personalize-response.jsp">)
+
+<ul>
+<li> <b>cookies-personalize-response.jsp:</b>
+Es un jsp que obtiene la información del form html con el método getParameter() del objeto jsp request, luego crea una cookie (theCookie), le da el tiempo de vida (en segundos) a la cookie con el método setMaxAge() y envía la cookie al navegador con la sentencia: response.addCookie(theCookie). Por último, tiene un enlace a la homepage (cookies-homepage.jsp)</li>
+ 
+<li> <b>cookies-homepage.jsp:</b>
+Es un jsp que: 
+  <ul><li> Establece una variable favLang con un valor predeterminado de "Java". Obtiene las cookies de la solicitud del navegador utilizando request.getCookies(), luego, verifica si se han obtenido cookies en la variable theCookies. Si se han obtenido cookies, el código realiza un bucle for para iterar a través de todas las cookies obtenidas. En cada iteración, se verifica si el nombre de la cookie coincide con "myApp.favoriteLanguage" utilizando tempCookie.getName(). Esto se hace para encontrar la cookie específica que almacena el lenguaje favorito. Si se encuentra la cookie, se asigna el valor de esa cookie a la variable favLang utilizando tempCookie.getValue(). Luego, se sale del bucle utilizando break. </li>
+  <li>Printea diferente información según el lenguaje favorito de cada persona </li>
+  <li>Tiene un link al form html para establecer el lenguaje por defecto que quiere que se almacene en la cookie, así que puede personalizar la página
+  </li></ul>
+
+
 <br/><br/>
 ### Contenido de la carpeta "servlets"
-- **HelloWorldServlet.java:**
-Es un servlet de inicio donde se pinta por pantalla la fecha y hora actuales
+<ul>
+<li> <b>HelloWorldServlet.java:</b>
+Es un servlet de inicio donde se pinta por pantalla la fecha y hora actuales</li>
 
-- **StudentsServlet:**
-Es un servlet que es invocado por un JSP (**student-form.jsp**) a través del atributo "action" de su etiqueta formulario. El JSP crea un formulario que cuando se cubre y envía, los datos cubiertos llegan al servlet y se imprimen por pantalla con el método request.getParameter(). JSP invoca a un Servlet con el atributo "action" de su etiqueta form
+<li> <b>StudentsServlet:</b>
+Es un servlet que es invocado por un JSP (<b>student-form.jsp</b>) a través del atributo "action" de su etiqueta formulario. El JSP crea un formulario que cuando se cubre y envía, los datos cubiertos llegan al servlet y se imprimen por pantalla con el método request.getParameter(). JSP invoca a un Servlet con el atributo "action" de su etiqueta form</li>
 
-- **DatosArrayServlet.java:**
-Es un servlet que guarda en una Array de Strings unos nombres e invoca a un jsp (**view_students.jsp**) que los pinta por pantalla. Servlet invoca a un JSP
+<li> <b>DatosArrayServlet.java:</b>
+Es un servlet que guarda en una Array de Strings unos nombres e invoca a un jsp (<b>view_students.jsp</b>) que los pinta por pantalla. Servlet invoca a un JSP</li>
 
-- **ParamContextServlet.java:**
-Es un servlet que utiliza los parámetros de contexto del web.xml con el método context.getInitParameter(). Servlet invoca los parámetros de contexto del web.xml
+<li> <b>ParamContextServlet.java:</b>
+Es un servlet que utiliza los parámetros de contexto del web.xml con el método context.getInitParameter(). Servlet invoca los parámetros de contexto del web.xml</li></ul>
 
-**Contenido de la subcarpeta MVC**
-- **Student.java:**
-Es una clase de java llamada Students con varios atributos y sus correspondientes getters y setters y un constructor
+<b>Contenido de la subcarpeta MVC</b>
+<ul>
+<li> <b>Student.java:</b>
+Es una clase de java llamada Students con varios atributos y sus correspondientes getters y setters y un constructor</li>
 
-- **StudentDataUtil.java:**
-Es una clase de java llamada StudentsDataUtil que sirve como **modelo** en el mvc. Devuelve una lista de objetos de estudiantes cuando un servlet la llame.
+<li> <b>StudentDataUtil.java:</b>
+Es una clase de java llamada StudentsDataUtil que sirve como **modelo** en el mvc. Devuelve una lista de objetos de estudiantes cuando un servlet la llame.</li>
 
-- **MvcServlet.java:**
-Es un servlet que sirve como **controlador** en el mvc. Primero coge una lista de los estudiantes, la pasa al request object con el método request.setAttribute() con el nombre "student-list", obtiene el request dispacher con el método request.getRequestDispatcher() apuntando hacia el jsp (view_students_two.jsp) y manda la información al jsp con el método dispatcher.forward().
+<li> <b>MvcServlet.java:</b>
+Es un servlet que sirve como <b>controlador</b> en el mvc. Primero coge una lista de los estudiantes, la pasa al request object con el método request.setAttribute() con el nombre "student-list", obtiene el request dispacher con el método request.getRequestDispatcher() apuntando hacia el jsp (view_students_two.jsp) y manda la información al jsp con el método dispatcher.forward().</li>
 
-- - **view_students_two.jsp:**
-Es un jsp que sirve como **vista** que imprime por pantalla en una tabla, los datos de los estudiantes que le envía el servlet (MvcServlet.java)
+<ul>
+<li> <b>view_students_two.jsp:</b>
+Es un jsp que sirve como <b>vista</b> que imprime por pantalla en una tabla, los datos de los estudiantes que le envía el servlet (MvcServlet.java)</li>
 
-- - **index.html:**
-Es un html que tiene un enlace que conecta con el Servlet para así, poder evitar ejecutar el Servlet directamente. Es una página simple con una etiqueta de enlace que nos redirige a la página web de nuestro Servlet
+<li> <b>index.html:</b>
+Es un html que tiene un enlace que conecta con el Servlet para así, poder evitar ejecutar el Servlet directamente. Es una página simple con una etiqueta de enlace que nos redirige a la página web de nuestro Servlet</li></ul>
+</li></ul>
