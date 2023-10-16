@@ -1,5 +1,6 @@
 # Repositorio de Recopilación de Archivos JSP, Servlets y MVC
-
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-FINALIZADO-violet) <br/>
+<br/>
 ¡Bienvenido al repositorio de Recopilación de Archivos JSP, Servlets y el Modelo Vista Controlador (MVC)!
 
 Este repositorio ha sido creado con el propósito de compartir el conocimiento adquirido durante mi curso de Udemy sobre archivos JSP, servlets y el patrón MVC. Aquí encontrarás una recopilación estructurada de ejercicios resueltos y apuntes detallados que te ayudarán a comprender y aplicar estos conceptos en tus proyectos de desarrollo web.
