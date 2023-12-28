@@ -1,5 +1,8 @@
 # Repositorio de Recopilación de Archivos JSP, Servlets y MVC
-![Badge en Desarollo](https://img.shields.io/badge/STATUS-FINALIZADO-violet) <br/>
+![Badge Finalizado](https://img.shields.io/badge/STATUS-FINALIZADO-violet)
+<img align="right" alt="License MIT" src="https://img.shields.io/badge/LICENSE-MIT-green" /> <br/>
+<img alt="java" src="https://img.shields.io/badge/-Java-EC2023?style=flat-square&logo=openjdk&logoColor=white" />
+<br/>
 <br/>
 ¡Bienvenido al repositorio de Recopilación de Archivos JSP, Servlets y el Modelo Vista Controlador (MVC)!
 
